@@ -16,6 +16,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 			fmt.Printf("%s: %s\n", header, value)
 		}
 	}
+	fmt.Printf("Host: %s\n", r.Host)
 
 	// Respond to the request
 	fmt.Fprintf(w, "Hello, this is the HTTPS server!\n")
